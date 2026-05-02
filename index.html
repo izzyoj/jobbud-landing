@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JobBud — AI Assistant for Job Hunters Who Are Over It</title>
+<title>JobBud ... AI Assistant for Job Hunters Who Are Over It</title>
 <style>
   :root {
     --bg:           #ffffff;
@@ -30,34 +30,6 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
-
-  /* ── NAV ─────────────────────────────────────────────────── */
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(255,255,255,0.88);
-    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    padding: 0 40px; height: 60px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-logo { font-size: 17px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
-  .nav-logo span { color: var(--accent); }
-  .nav-cta {
-    background: var(--accent); color: #fff; border: none;
-    border-radius: 20px; padding: 9px 20px; font-size: 14px; font-weight: 600;
-    cursor: pointer; transition: background 0.2s, transform 0.1s; text-decoration: none;
-  }
-  .nav-cta:hover { background: var(--accent-hover); transform: translateY(-1px); }
-
-  /* ── SECTIONS ─────────────────────────────────────────────── */
-  section { padding: 80px 40px; }
-  .container { max-width: 900px; margin: 0 auto; }
-  .label {
-    font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
-  }
-  h1 { font-size: clamp(34px, 5vw, 52px); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; }
-  h2 { font-size: clamp(26px, 3.5vw, 36px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }
 
   /* ── HERO ─────────────────────────────────────────────────── */
   #hero {
@@ -380,8 +352,7 @@
   }
   @media (max-width: 768px) {
     section { padding: 60px 20px; }
-    nav { padding: 0 20px; }
-    #hero { padding: 70px 20px 60px; }
+#hero { padding: 70px 20px 60px; }
     .chaos-grid { grid-template-columns: 1fr; }
     .pain-grid { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
@@ -392,30 +363,28 @@
     #footer { padding: 48px 24px; }
   }
   @media (max-width: 480px) {
-    .nav-logo span:first-child { display: none; }
-    #hero h1 { font-size: 28px; }
+#hero h1 { font-size: 28px; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">💼 Job<span>Bud</span></div>
-  <button class="nav-cta" onclick="openModal()">Get Early Access — Free</button>
-</nav>
-
 <!-- HERO -->
 <section id="hero">
   <div class="container">
-    <div class="eyebrow">🎯 For Job Hunters Who Are Over It</div>
+    <div class="label" style="font-size:15px;text-transform:none;letter-spacing:0;font-weight:700;color:var(--text);margin-bottom:10px;">🎯 JobBud for Job Hunters Who Are Over It</div>
+    <div class="eyebrow">AI assistant in Telegram</div>
     <h1>You're not bad at job hunting.<br/>You're just doing it in <em>47 browser tabs</em> with no backup.</h1>
-    <p class="sub">JobBud is your personal AI assistant in Telegram. It tracks your pipeline, scores roles, preps your calls, and tells you what to do next — so you can stop managing the chaos and start getting offers.</p>
+    <p class="sub">JobBud is your personal AI assistant in Telegram. It tracks your pipeline, scores roles, preps your calls, and tells you what to do next ... so you can stop managing the chaos and start getting offers.</p>
     <p class="aside">No spreadsheet to maintain. No Notion template to fill in. Just text it.</p>
+    <div style="background:var(--accent-soft);border-radius:12px;padding:20px 24px;margin:0 auto 28px;max-width:520px;text-align:left;">
+      <div style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;">Limited FREE offer</div>
+      <p style="font-size:16px;color:var(--text-2);line-height:1.6;">I know how difficult the market is so I'm here to help. FREE setup in exchange for an honest testimonial. Limited spots.</p>
+    </div>
     <div class="hero-ctas">
-      <button class="btn-primary" onclick="openModal()">Get Early Access — Free</button>
       <a href="#pain" class="btn-secondary">See if this is you →</a>
     </div>
+    <p style="font-size:14px;color:var(--text-3);margin-top:16px;font-style:italic;">5 questions. We'll tell you straight.</p>
   </div>
 </section>
 
@@ -446,39 +415,39 @@
         </div>
         <div class="tg-body">
           <div class="tg-msg user">
-            <div class="tg-bubble">Just got a callback from Meridian — it's Sarah. She's got a PM role at Horizon Bank, 12 month contract, $1,250/day. Wants my availability. She'll send the JD today.</div>
+            <div class="tg-bubble">Just got a callback from Meridian ... it's Sarah. She's got a PM role at Horizon Bank, 12 month contract, $1,250/day. Wants my availability. She'll send the JD today.</div>
             <div class="tg-time">2:51pm</div>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Logged. Here's what's in the tracker:<code>📍 Meridian Talent — Sarah R.
-🏢 Horizon Bank — Senior PM
+              Logged. Here's what's in the tracker:<code>📍 Meridian Talent ... Sarah R.
+🏢 Horizon Bank ... Senior PM
 💰 $1,250/day (~$325k annualised)
 📅 12-month initial contract
-📎 JD incoming — ETA today
+📎 JD incoming ... ETA today
 ⏰ Next: Review JD + run score</code>
               Quick take on rate: above your target. Strong client. Once the JD lands, paste it here and I'll give you the full score + CV recommendation in 30 seconds.
             </div>
             <div class="tg-time">2:51pm</div>
           </div>
           <div class="tg-msg user">
-            <div class="tg-bubble">Perfect. Also — did I already have a Meridian contact? I can't remember.</div>
+            <div class="tg-bubble">Perfect. Also ... did I already have a Meridian contact? I can't remember.</div>
             <div class="tg-time">2:52pm</div>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Yes. You have two Meridian contacts logged:<code>1. Anya — called 14 Apr re: $1,250/day
+              Yes. You have two Meridian contacts logged:<code>1. Anya ... called 14 Apr re: $1,250/day
    fintech PM role. Voicemail left. No reply.
-   ⚠️ Overdue — 4 days no response.
+   ⚠️ Overdue ... 4 days no response.
 
-2. Sarah R. — just now. Horizon Bank PM.</code>
-              Different recruiter, different role. Anya's one has gone quiet — worth a follow-up this week before it fills.
+2. Sarah R. ... just now. Horizon Bank PM.</code>
+              Different recruiter, different role. Anya's one has gone quiet ... worth a follow-up this week before it fills.
             </div>
             <div class="tg-time">2:52pm</div>
           </div>
         </div>
       </div>
-      <p class="demo-context">No spreadsheet open. No memory required. JobBud had the earlier contact logged and flagged it as overdue — unprompted.</p>
+      <p class="demo-context">No spreadsheet open. No memory required. JobBud had the earlier contact logged and flagged it as overdue ... unprompted.</p>
     </div>
 
     <!-- Demo 2: Scoring a Role -->
@@ -493,26 +462,26 @@
         </div>
         <div class="tg-body">
           <div class="tg-msg user">
-            <div class="tg-bubble">JD just landed. FinReg — Senior Project Manager, regulatory transformation, Canberra-based but 80% remote, 12 months, $170k–$184k + 15.4% super. Govt. Should I pursue this?</div>
+            <div class="tg-bubble">JD just landed. FinReg ... Senior Project Manager, regulatory transformation, Canberra-based but 80% remote, 12 months, $170k–$184k + 15.4% super. Govt. Should I pursue this?</div>
             <div class="tg-time">9:18am</div>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Scoring against your criteria now...<code>⭐ 4.5 / 5.0 — Strong pursue
+              Scoring against your criteria now...<code>⭐ 4.5 / 5.0 ... Strong pursue
 
 Rate:     ✅ $184k + 15.4% super
           (~$212k total comp)
 Role:     ✅ SPM-track, regulatory delivery
-Sector:   ✅ Government (Regulator — top tier)
+Sector:   ✅ Government (Regulator ... top tier)
 Contract: ✅ 12 months initial
-Location: ✅ 80% remote — Canberra manageable
+Location: ✅ 80% remote ... Canberra manageable
 Client:   ✅ Gov agency experience directly relevant
-AI/Trans: ⚡ Regulatory digital — moderate</code>
+AI/Trans: ⚡ Regulatory digital ... moderate</code>
               <strong>CV to use:</strong> SPM-Variant
               <strong>3 tweaks:</strong>
               1. Lead summary with regulatory delivery experience
               2. Pull PRINCE2 + relevant cert to top of credentials
-              3. Add "cross-functional stakeholder alignment" — appears 3x in JD
+              3. Add "cross-functional stakeholder alignment" ... appears 3x in JD
             </div>
             <div class="tg-time">9:18am</div>
           </div>
@@ -521,7 +490,7 @@ AI/Trans: ⚡ Regulatory digital — moderate</code>
             <div class="tg-time">9:19am</div>
           </div>
           <div class="tg-msg bot">
-            <div class="tg-bubble">JD doesn't specify a close date. Given it's a federal regulator, treat it as urgent — gov roles can close fast. I'd target submission by Friday. Want me to set a reminder for Thursday to confirm it's done?</div>
+            <div class="tg-bubble">JD doesn't specify a close date. Given it's a federal regulator, treat it as urgent ... gov roles can close fast. I'd target submission by Friday. Want me to set a reminder for Thursday to confirm it's done?</div>
             <div class="tg-time">9:19am</div>
           </div>
         </div>
@@ -542,24 +511,24 @@ AI/Trans: ⚡ Regulatory digital — moderate</code>
         <div class="tg-body">
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              <strong>☀️ Morning brief — Thursday 17 Apr</strong><code>🔴 ACTION TODAY
+              <strong>☀️ Morning brief ... Thursday 17 Apr</strong><code>🔴 ACTION TODAY
 
-1. Call Jordan/Apex — Bank PM x3 roles
+1. Call Jordan/Apex ... Bank PM x3 roles
    Both numbers. Last attempt: Mon.
-   Overdue — call before 10am.
+   Overdue ... call before 10am.
 
-2. Chase Anya/Meridian — $1,250/day role
+2. Chase Anya/Meridian ... $1,250/day role
    Voicemail left 14 Apr. 3 days no reply.
    Try again or mark stale.
 
-3. FinReg application — closing soon
+3. FinReg application ... closing soon
    Tailor SPM-CV (3 tweaks above).
    Target: submit today.</code>
               <code>⏳ WAITING (no update)
 
-• Nexus/Edward — 7 days silence
-• Pinnacle/Maria — applied 8 Apr, no reply
-• CoreHire/Chris — reference check pending</code>
+• Nexus/Edward ... 7 days silence
+• Pinnacle/Maria ... applied 8 Apr, no reply
+• CoreHire/Chris ... reference check pending</code>
               <code>📊 Pipeline
 Active: 6  |  Overdue: 2  |  Expiring: 1</code>
             </div>
@@ -571,9 +540,9 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Two numbers logged for Jordan at Apex:<code>📱 0412 XXX XXX (mobile — try this first)
+              Two numbers logged for Jordan at Apex:<code>📱 0412 XXX XXX (mobile ... try this first)
 ☎️  02 9XXX XXXX (direct line)</code>
-              Last call was mobile — went to voicemail. Try the direct line this time.
+              Last call was mobile ... went to voicemail. Try the direct line this time.
             </div>
             <div class="tg-time">8:04am</div>
           </div>
@@ -599,14 +568,14 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
         <div class="step-title">Capture</div>
         <div class="step-desc">Found a role on a job board? Recruiter just called? New role that looks interesting? Voice note or Text JobBud. URL or One line.</div>
         <div class="step-aside">No form. No spreadsheet row. No "what folder does this go in?"</div>
-        <div class="step-command">/capture Meridian/Sarah — Bank PM — $1,250/day</div>
+        <div class="step-command">/capture Meridian/Sarah ... Bank PM ... $1,250/day</div>
       </div>
       <div class="step-card">
         <div class="step-number">2</div>
         <div class="step-title">Score &amp; Route</div>
         <div class="step-desc">JobBud evaluates the role against your criteria and routes it: hot list, maybe pile, or pass. If it's worth pursuing, it tells you exactly what to do next and which CV variant to use.</div>
         <div class="step-aside">You stop making the same judgement calls on gut feel.</div>
-        <div class="step-command">/score → Rate 4.2/5 — use SPM-CV variant</div>
+        <div class="step-command">/score → Rate 4.2/5 ... use SPM-CV variant</div>
       </div>
       <div class="step-card">
         <div class="step-number">3</div>
@@ -641,7 +610,7 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
       <div class="pain-card" onclick="selectPain(0)">
         <div class="pain-label">Pain 01</div>
         <div class="pain-title">"I'm applying everywhere and I have no idea which roles are actually worth my time."</div>
-        <div class="pain-aside">SEEK, LinkedIn, gov portals, recruiter emails, referrals — all feeding into the same pile of vague hope.</div>
+        <div class="pain-aside">SEEK, LinkedIn, gov portals, recruiter emails, referrals ... all feeding into the same pile of vague hope.</div>
       </div>
       <div class="pain-card" onclick="selectPain(1)">
         <div class="pain-label">Pain 02</div>
@@ -680,28 +649,28 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
         <div class="sp-icon">🧠</div>
         <div class="sp-title">Recruiter Memory That Doesn't Quit</div>
         <div class="sp-body">
-          Unknown number calls. You answer. It's a recruiter — but which one? About which role?
+          Unknown number calls. You answer. It's a recruiter ... but which one? About which role?
           With which agency? JobBud holds every contact, every call outcome, every next step. Pull it up in Telegram in 10 seconds and sound like you've been across it the whole time.
         </div>
-        <div class="sp-proof">Meridian / Sarah R. — Bank PM — called Tue — awaiting JD — call back Thu → surfaced instantly when she rings again.</div>
+        <div class="sp-proof">Meridian / Sarah R. ... Bank PM ... called Tue ... awaiting JD ... call back Thu → surfaced instantly when she rings again.</div>
       </div>
 
       <div class="sp-card">
         <div class="sp-icon">⚡</div>
         <div class="sp-title">Role Scoring in 30 Seconds Flat</div>
         <div class="sp-body">
-          Paste a JD. Get a score. JobBud weighs the role against YOUR criteria — rate, sector, contract length, location, client prestige — and tells you whether it's worth a Tuesday afternoon or a quick pass. No more gut-feel decisions that cost you 3 hours.
+          Paste a JD. Get a score. JobBud weighs the role against YOUR criteria ... rate, sector, contract length, location, client prestige ... and tells you whether it's worth a Tuesday afternoon or a quick pass. No more gut-feel decisions that cost you 3 hours.
         </div>
-        <div class="sp-proof">4.2 / 5.0 — Rate ✓ $1,250/day · Sector ✓ Gov · Location ✓ CBD · CV: use SPM-variant · 3 tweaks needed.</div>
+        <div class="sp-proof">4.2 / 5.0 ... Rate ✓ $1,250/day · Sector ✓ Gov · Location ✓ CBD · CV: use SPM-variant · 3 tweaks needed.</div>
       </div>
 
       <div class="sp-card">
         <div class="sp-icon">📡</div>
         <div class="sp-title">The Pipeline That Flags Its Own Leaks</div>
         <div class="sp-body">
-          You don't need to check the pipeline — it checks itself. Every morning, JobBud surfaces what's gone quiet too long, what's expiring, and who you need to chase before they fill the role. Proactive. Not reactive.
+          You don't need to check the pipeline ... it checks itself. Every morning, JobBud surfaces what's gone quiet too long, what's expiring, and who you need to chase before they fill the role. Proactive. Not reactive.
         </div>
-        <div class="sp-proof">Nexus/Edward — no callback since 7 days. Pinnacle/Maria — applied 8 Apr, no reply. Both flagged before 8am.</div>
+        <div class="sp-proof">Nexus/Edward ... no callback since 7 days. Pinnacle/Maria ... applied 8 Apr, no reply. Both flagged before 8am.</div>
       </div>
 
     </div>
@@ -719,25 +688,25 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
       <div class="label">Access</div>
       <h2>Start free. Get set up in one call. No catch.</h2>
       <p>Your only cost is the Claude Pro subscription (~AUD $32/month, billed by Anthropic directly). My 30-minute setup session, personalisation, and 30-day support: free.</p>
-      <p style="margin-top:16px;">Free to set up. One thing in return. One honest testimonial after 30 days of use.</p>
-      <p style="margin-top:12px;font-weight:600;color:var(--text);">5 spots. 3 remaining. I'm looking for real-world case studies — not beta testers who disappear.</p>
+      <p style="margin-top:16px;">After 30 days, your AI assistant is yours for FREE. Your only recurring cost is Claude Pro. If you want to expand your AI assistant's capabilities down the line, I'm happy to discuss that.</p>
+      <p style="margin-top:12px;font-weight:600;color:var(--text);">5 spots. When they're gone they're gone.</p>
     </div>
     <div class="pricing-grid">
       <div class="price-card featured">
-        <div class="featured-badge">👋 Alpha — Open Now</div>
+        <div class="featured-badge">👋 Alpha ... Open Now</div>
         <div class="price-tier">Alpha</div>
         <div class="price-amount">Free</div>
         <div class="price-tagline">You get set up. I get your honest feedback.</div>
         <ul class="price-features">
-          <li>Personal onboarding call — live by end of session</li>
+          <li>Personal onboarding call ... live by end of session</li>
           <li>Full pipeline structure built in session one</li>
           <li>Role scoring calibrated to YOUR criteria</li>
           <li>Telegram bot live within the call</li>
           <li>Direct line for the first 30 days</li>
-          <li>Testimonial asked for — never demanded</li>
+          <li>Testimonial asked for ... never demanded</li>
         </ul>
         <button class="price-cta primary" onclick="openModal()">Apply for a spot</button>
-        <div class="spots-tag">⚡ 3 remaining — real-world case studies only</div>
+        <div class="spots-tag">⚡ 5 spots. When they're gone they're gone.</div>
         <div class="tier-anchor-note">Alpha locks in your rate before Pro and Power launch.</div>
       </div>
       <div class="price-card tier-locked">
@@ -784,6 +753,7 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
   </div>
   <button class="footer-cta" onclick="openModal()">Claim an Alpha spot</button>
   <div class="footer-sign">The job hunt is hard. Losing track of it shouldn't make it harder.</div>
+  <p style="margin-top:20px;font-size:15px;color:rgba(255,255,255,0.55);max-width:480px;margin-left:auto;margin-right:auto;">Either way, you keep what we built. That's the deal for helping shape this. A job hunt operating system, a recruiter that's on your side in your pocket.</p>
 </section>
 
 <!-- MODAL -->
@@ -805,15 +775,15 @@ Active: 6  |  Overdue: 2  |  Expiring: 1</code>
     },
     {
       label: 'Pain 02 → The fix',
-      text: 'JobBud logs every recruiter contact — who called, which agency, which role, what was said, what the next step is. When they call back, you pull up the thread in 10 seconds and sound like you\'ve been tracking it all along. Because you have.'
+      text: 'JobBud logs every recruiter contact ... who called, which agency, which role, what was said, what the next step is. When they call back, you pull up the thread in 10 seconds and sound like you\'ve been tracking it all along. Because you have.'
     },
     {
       label: 'Pain 03 → The fix',
-      text: 'JobBud tells you which CV variant fits the role and exactly what to tweak — and what NOT to touch. 15 minutes instead of 3 hours. Consistent, targeted, done. You apply faster and better, to the roles that are actually worth it.'
+      text: 'JobBud tells you which CV variant fits the role and exactly what to tweak ... and what NOT to touch. 15 minutes instead of 3 hours. Consistent, targeted, done. You apply faster and better, to the roles that are actually worth it.'
     },
     {
       label: 'Pain 04 → The fix',
-      text: 'JobBud runs your pipeline review every morning. Active applications, stalled ones, callbacks overdue, roles gone cold. You see the full board in one message. Nothing drops off because there\'s nothing to forget — it\'s all logged.'
+      text: 'JobBud runs your pipeline review every morning. Active applications, stalled ones, callbacks overdue, roles gone cold. You see the full board in one message. Nothing drops off because there\'s nothing to forget ... it\'s all logged.'
     }
   ];
 
