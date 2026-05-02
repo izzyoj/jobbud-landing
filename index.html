@@ -399,8 +399,9 @@
 
     <div class="demo-tabs">
       <button class="demo-tab active" onclick="switchDemo(0)">📞 Mystery Callback</button>
-      <button class="demo-tab" onclick="switchDemo(1)">⭐ Scoring a Role</button>
-      <button class="demo-tab" onclick="switchDemo(2)">☀️ Morning Brief</button>
+      <button class="demo-tab" onclick="switchDemo(1)">⭐ Score → Submit</button>
+      <button class="demo-tab" onclick="switchDemo(2)">📋 Pre-Call Brief</button>
+      <button class="demo-tab" onclick="switchDemo(3)">☀️ Morning Brief</button>
     </div>
 
     <!-- Demo 1: Mystery Callback -->
@@ -426,22 +427,21 @@
 📅 12-month initial contract
 📎 JD incoming ... ETA today
 ⏰ Next: Review JD + run score</code>
-              Quick take on rate: above your target. Strong client. Once the JD lands, paste it here and I'll give you the full score + CV recommendation in 30 seconds.
+              Above your target rate. Strong client. Paste the JD when it lands and I'll score it + tell you which CV to use in 30 seconds.
             </div>
             <div class="tg-time">2:51pm</div>
           </div>
           <div class="tg-msg user">
-            <div class="tg-bubble">Perfect. Also ... did I already have a Meridian contact? I can't remember.</div>
+            <div class="tg-bubble">Did I already have a Meridian contact? I can't remember.</div>
             <div class="tg-time">2:52pm</div>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Yes. You have two Meridian contacts logged:<code>1. Anya ... called 14 Apr re: $1,250/day
-   fintech PM role. Voicemail left. No reply.
-   ⚠️ Overdue ... 4 days no response.
+              Yes. Two Meridian contacts logged:<code>1. Anya ... called 14 Apr, $1,250/day fintech PM.
+   Voicemail left. No reply. ⚠️ Overdue 4 days.
 
 2. Sarah R. ... just now. Horizon Bank PM.</code>
-              Different recruiter, different role. Anya's one has gone quiet ... worth a follow-up this week before it fills.
+              Different recruiter, different role. Anya's gone quiet ... worth a follow-up this week before it fills.
             </div>
             <div class="tg-time">2:52pm</div>
           </div>
@@ -450,7 +450,7 @@
       <p class="demo-context">No spreadsheet open. No memory required. JobBud had the earlier contact logged and flagged it as overdue ... unprompted.</p>
     </div>
 
-    <!-- Demo 2: Scoring a Role -->
+    <!-- Demo 2: Score to Submit -->
     <div class="demo-panel" id="demo-1">
       <div class="tg-window">
         <div class="tg-header">
@@ -462,44 +462,113 @@
         </div>
         <div class="tg-body">
           <div class="tg-msg user">
-            <div class="tg-bubble">JD just landed. FinReg ... Senior Project Manager, regulatory transformation, Canberra-based but 80% remote, 12 months, $170k–$184k + 15.4% super. Govt. Should I pursue this?</div>
+            <div class="tg-bubble">JD just landed. FinReg ... Senior PM, regulatory transformation, 80% remote, 12 months, $184k + 15.4% super. Should I pursue this?</div>
             <div class="tg-time">9:18am</div>
           </div>
           <div class="tg-msg bot">
             <div class="tg-bubble">
-              Scoring against your criteria now...<code>⭐ 4.5 / 5.0 ... Strong pursue
+              Scoring...<code>⭐ 4.5 / 5.0 ... Strong pursue
 
-Rate:     ✅ $184k + 15.4% super
-          (~$212k total comp)
+Rate:     ✅ $184k + super (~$212k total)
 Role:     ✅ SPM-track, regulatory delivery
-Sector:   ✅ Government (Regulator ... top tier)
-Contract: ✅ 12 months initial
-Location: ✅ 80% remote ... Canberra manageable
-Client:   ✅ Gov agency experience directly relevant
-AI/Trans: ⚡ Regulatory digital ... moderate</code>
-              <strong>CV to use:</strong> SPM-Variant
-              <strong>3 tweaks:</strong>
-              1. Lead summary with regulatory delivery experience
-              2. Pull PRINCE2 + relevant cert to top of credentials
-              3. Add "cross-functional stakeholder alignment" ... appears 3x in JD
+Sector:   ✅ Government regulator ... top tier
+Contract: ✅ 12 months
+Location: ✅ 80% remote</code>
+              CV: SPM-Variant. Three tweaks: lead with regulatory delivery, pull PRINCE2 to top, add "cross-functional stakeholder alignment" (appears 3x in JD). Want me to build the tailored CV and draft the cover letter now?
             </div>
             <div class="tg-time">9:18am</div>
           </div>
           <div class="tg-msg user">
-            <div class="tg-bubble">Solid. When does it close?</div>
+            <div class="tg-bubble">Yes do it</div>
             <div class="tg-time">9:19am</div>
           </div>
           <div class="tg-msg bot">
-            <div class="tg-bubble">JD doesn't specify a close date. Given it's a federal regulator, treat it as urgent ... gov roles can close fast. I'd target submission by Friday. Want me to set a reminder for Thursday to confirm it's done?</div>
-            <div class="tg-time">9:19am</div>
+            <div class="tg-bubble">
+              Done. Here's what I've prepped:<code>📄 CV ... SPM-Variant (3 tweaks applied)
+✉️ Cover letter draft:
+
+"With 15 years delivering complex regulatory
+programs across government and enterprise,
+I bring exactly the cross-functional
+stakeholder alignment your FinReg
+transformation requires..."</code>
+              Review both and reply <strong>send</strong> when you're happy.
+            </div>
+            <div class="tg-time">9:21am</div>
+          </div>
+          <div class="tg-msg user">
+            <div class="tg-bubble">Looks good. Send.</div>
+            <div class="tg-time">9:23am</div>
+          </div>
+          <div class="tg-msg bot">
+            <div class="tg-bubble">
+              Sent to FinReg recruiter.<code>📋 Tracker updated:
+   FinReg / Senior PM ... Applied 17 Apr
+⏰ Follow-up reminder set: Thu 24 Apr</code>
+            </div>
+            <div class="tg-time">9:23am</div>
           </div>
         </div>
       </div>
-      <p class="demo-context">30 seconds from JD paste to scored decision + CV recommendation. No gut feel. No second-guessing.</p>
+      <p class="demo-context">Score to submitted in under 5 minutes. CV tailored, cover letter drafted, application sent. Loop closed.</p>
     </div>
 
-    <!-- Demo 3: Morning Brief -->
+    <!-- Demo 3: Pre-Call Brief -->
     <div class="demo-panel" id="demo-2">
+      <div class="tg-window">
+        <div class="tg-header">
+          <div class="tg-avatar">💼</div>
+          <div>
+            <div class="tg-name">JobBud</div>
+            <div class="tg-status">online</div>
+          </div>
+        </div>
+        <div class="tg-body">
+          <div class="tg-msg user">
+            <div class="tg-bubble">Jordan from Apex calling in 15 minutes. Bank PM roles, $1,200–$1,300/day range. Haven't spoken to him before.</div>
+            <div class="tg-time">2:44pm</div>
+          </div>
+          <div class="tg-msg bot">
+            <div class="tg-bubble">
+              Quick brief for Jordan/Apex:<code>📌 Context
+Apex specialises in PM/BA for major banks.
+No prior contact logged with Jordan.
+
+🎯 Your pitch
+Lead with: 15yr PM delivery, fintech + regulator.
+Rate anchor: $1,250/day. Don't open below it.
+Don't volunteer: current end date (let him ask).
+
+❓ Questions to ask
+1. "Who's the hiring manager ... what's their
+   timeline to place?"
+2. "Is the budget fixed or is there flex?"
+3. "What happened to the last person in this role?"</code>
+              Say "log call" straight after and I'll capture the outcome.
+            </div>
+            <div class="tg-time">2:44pm</div>
+          </div>
+          <div class="tg-msg user">
+            <div class="tg-bubble">Log call. Jordan has 3 active bank PM roles. $1,200–$1,350 range. Sending JDs this afternoon. Good vibe.</div>
+            <div class="tg-time">3:12pm</div>
+          </div>
+          <div class="tg-msg bot">
+            <div class="tg-bubble">
+              Logged.<code>📍 Jordan ... Apex Recruitment
+📞 Called 17 Apr, 2:58pm
+💬 3 active Bank PM roles, $1,200–$1,350/day
+📎 JDs inbound ... ETA this afternoon
+⏰ Next: Score JDs when they land</code>
+            </div>
+            <div class="tg-time">3:12pm</div>
+          </div>
+        </div>
+      </div>
+      <p class="demo-context">Show up to every recruiter call with context. Leave every call with it captured. Nothing falls through the gap.</p>
+    </div>
+
+    <!-- Demo 4: Morning Brief -->
+    <div class="demo-panel" id="demo-3">
       <div class="tg-window">
         <div class="tg-header">
           <div class="tg-avatar">💼</div>
@@ -513,16 +582,15 @@ AI/Trans: ⚡ Regulatory digital ... moderate</code>
             <div class="tg-bubble">
               <strong>☀️ Morning brief ... Thursday 17 Apr</strong><code>🔴 ACTION TODAY
 
-1. Call Jordan/Apex ... Bank PM x3 roles
-   Both numbers. Last attempt: Mon.
-   Overdue ... call before 10am.
+1. Call Jordan/Apex ... 3 Bank PM JDs inbound
+   No contact yet. Call before 10am.
 
 2. Chase Anya/Meridian ... $1,250/day role
-   Voicemail left 14 Apr. 3 days no reply.
+   Voicemail 14 Apr. 3 days no reply.
    Try again or mark stale.
 
-3. FinReg application ... closing soon
-   Tailor SPM-CV (3 tweaks above).
+3. FinReg ... closing soon
+   SPM-CV tailored, ready to send.
    Target: submit today.</code>
               <code>⏳ WAITING (no update)
 
